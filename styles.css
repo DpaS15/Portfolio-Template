@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0A192F, #004080);
+    color: white;
+    position: relative;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Glassmorphism Effect */
+.header-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    display: inline-block;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* Sections */
+.container {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 28px;
+}
+
+/* Buttons */
+.btn-primary {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* Images */
+.section-image {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Experience & Testimonials */
+.experience-card, .testimonial {
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Contact Section */
+#contact {
+    background: white;
+    color: #000; /* Ensures visibility in light mode */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Contact Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === DARK MODE STYLES === */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Dark Mode for Containers */
+.dark-mode .container, .dark-mode #contact {
+    background: #333;
+    color: white;
+}
+
+/* Dark Mode for Lists */
+.dark-mode ul li {
+    background: #0056b3;
+}
+
+/* Fix for Experience & Testimonials in Dark Mode */
+.dark-mode .experience-card, .dark-mode .testimonial {
+    background: #444;
+    color: white;
+    border-left: 5px solid #007bff;
+}
+
+/* Dark Mode Toggle Button */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #0056b3;
+}
